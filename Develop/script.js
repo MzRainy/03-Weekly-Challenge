@@ -1,6 +1,5 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-
 //    - Create alert for password length both to short and to long.
 var pwLength = parseInt(
   prompt('How many characters would you like your password to contain?'),
@@ -59,6 +58,7 @@ createPassword(9)
 
 
 
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
@@ -67,5 +67,8 @@ function writePassword() {
   passwordText.value = password;
 
 }
+
+
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
