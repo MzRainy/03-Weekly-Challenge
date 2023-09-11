@@ -50,6 +50,16 @@ createPassword(9)
 
 
 //  - Ask password lowercase
+var pwLower = parseInt(
+  prompt('Do you want lowercase letters?'),
+  10
+ );
+
+ if (pwLength < 8) {
+  alert('Password length must be at least 8 characters');
+  } else if (pwLength > 128) {
+    alert('Password cannot exceed 128 characters');
+   }
 //  - Ask password uppercase
 //  - Ask password number
 //  - Ask password special character
