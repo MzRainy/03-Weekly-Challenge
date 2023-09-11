@@ -9,20 +9,26 @@ var pwLength = parseInt(
 
  if (pwLength < 8) {
   alert('Password length must be at least 8 characters');
+
+  prompt('How many characters would you like your password to contain?'),
+  10
   } else if (pwLength > 128) {
     alert('Password cannot exceed 128 characters');
    }
+   prompt('How many characters would you like your password to contain?'),
+  10
+  
+
+   var lowerCase = "abcdefghijklmnopqrstuvwxyz"(
+    prompt('Do you want lowercase letters?'),
+    console.log(pwLength),
+   )
 
 function getPrompt(){
 
 }
-
 //create function for password length
 
-function createPassword() {
-var pwdChar = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+<>? ~`;:|ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-var passwordLength = length;
 
 var pwdChar = new Uint32Array(length);
 window.crypto.getRandomValues(pwd);
@@ -30,13 +36,12 @@ window.crypto.getRandomValues(pwd);
 for (i=0; i<length; i++){
   password += pwdChar[array[i] % pwdChar.length];
 }
-return password
-console.log(password)
+//return password
 
 
-}
 
-createPassword(9)
+
+
 
 
 //create function for password choices
@@ -50,22 +55,27 @@ createPassword(9)
 
 
 //  - Ask password lowercase
-var pwLower = parseInt(
-  prompt('Do you want lowercase letters?'),
-  10
- );
-
- if (pwLength < 8) {
-  alert('Password length must be at least 8 characters');
-  } else if (pwLength > 128) {
-    alert('Password cannot exceed 128 characters');
-   }
 //  - Ask password uppercase
 //  - Ask password number
 //  - Ask password special character
 
 //create the randomization of password
 //  - Create the for loop
+//var generatePassword(){
+  var chars = "";
+  var pw = "";
+  
+
+  console.log(pwLength);
+  console.log(lowerCase);
+  console.log(upperCase);
+  console.log(number);
+  console.log(specialChar);
+
+  if(lowerCase == true) {
+
+
+  }
 
 
 
