@@ -2,30 +2,24 @@
 var generateBtn = document.querySelector("#generate");
 
 //    - Create alert for password length both to short and to long.
-var length = prompt("Please enter the length of your password between 8 and 128 characters.");
-console.log (length);
+var pwLength = parseInt(
+  prompt('How many characters would you like your password to contain?'),
+  10
+ );
+
+ if (pwLength < 8) {
+  alert('Password length must be at least 8 characters');
+  } else if (pwLength > 128) {
+    alert('Password cannot exceed 128 characters');
+   }
 
 function getPrompt(){
 
-
 }
 
-
-var pwlength = parseInt(
-  prompt('How many characters would you like your password to contain?');
-
- if (pwlength < 8) {
-  alert('Password length must be at least 8 characters');
-   } else if (pwlength > 128) {
-    alert('Password cannot exceed 128 characters');
-     } 
-
-
-
 //create function for password length
-length = 
 
-function createPassword(length) {
+function createPassword() {
 var pwdChar = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+<>? ~`;:|ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 var passwordLength = length;
