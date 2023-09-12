@@ -75,9 +75,9 @@ function pwPrompts(){
     if (confirm('Do you want special characters?'));
     pwArray = pwArray.concat(symbolArray);
     console.log(symbolArray);
-  
-  }
   return true;
+  }
+  
 
 
 
