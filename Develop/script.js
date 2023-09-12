@@ -43,7 +43,7 @@ function generatePassword() {
   var password = '';
 
   for(var i = 0; i < pwLength; i++) {
-    var randLetter = math.floor(math.random() * pwArray.length)
+    var randLetter = Math.floor(Math.random() * pwArray.length)
     password = password + pwArray[randLetter];
   }
 return password;
